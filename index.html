@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>這名子能用嗎？</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="container h-100">
+      <div class="row align-items-center h-100">
+        <div class="mx-auto">
+
+          <h1>請輸入你想查詢的Minecraft ID</h1>
+          <div class="input-group mx-auto">
+            <input id="searchBox" type="text" class="form-control" autofocus>
+            <div class="input-group-append">
+              <button id="searchButton" class="btn btn-info">查詢</button>
+            </div>
+          </div>
+
+          <br>
+          <div hidden class="loader loader-small mx-auto"></div>
+
+          <div hidden class="card text-center id-status-card id-status-card-available mx-auto">
+            <div class="card-body ">
+              <i class="fas fa-check-circle"></i>
+              <p class="card-text">喜歡的話就馬上去更換ID吧！</p>
+              <a href="https://account.mojang.com/me" target="_blank" class="btn btn-primary">點我前往</a>
+            </div>
+          </div>
+          <div hidden class="card text-center id-status-card id-status-card-unavailable mx-auto">
+            <div class="card-body ">
+              <i class="fas fa-times-circle"></i>
+              <p class="card-text">此ID已被使用</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+        integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
